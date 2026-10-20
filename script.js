@@ -11,7 +11,7 @@ let usuarioLogado = null;
 
 // 2. Seleção de Elementos (DOM)
 const secaoLogin = document.querySelector('#login-section');
-const secaoCadastro = document.querySelector('#cadastro-seção');
+const secaoCadastro = document.querySelector('#cadastro-section');
 const secaoSucesso = document.querySelector('#sucesso-section');
 const secaoPainel = document.querySelector('#painel-section');
 
@@ -22,13 +22,13 @@ const loginErro = document.querySelector('#login-erro');
 // 3. Alternância entre Telas (Login <-> Cadastro)
 document.querySelector('#link-ir-cadastro').addEventListener('click', (e) => {
     e.preventDefault();
-    secaoLogin.style.display = 'nenhum';
-    secaoCadastro.style.display = 'bloco';
+    secaoLogin.style.display = 'none';
+    secaoCadastro.style.display = 'block';
 });
 
 document.querySelector('#link-voltar-login').addEventListener('click', (e) => {
     e.preventDefault();
-    secaoCadastro.style.display = 'nenhum';
+    secaoCadastro.style.display = 'none';
     secaoLogin.style.display = 'block';
 });
 
@@ -39,39 +39,38 @@ document.querySelector('#btn-login').addEventListener('click', () => {
 
     const clienteEncontrado = clientes.find(c => c.cpf === cpfDigitado && c.senha === senhaDigitada);
 
-    se (clienteEncontrado) {
-        usuárioLogado = clienteEncontrado;
-        loginErro.style.display = 'nenhum';
-        secaoLogin.style.display = 'nenhum';
+    if (clienteEncontrado) {
+        usuarioLogado = clienteEncontrado;
+        loginErro.style.display = 'none';
+        secaoLogin.style.display = 'none';
         secaoPainel.style.display = 'block';
 
         campoSaldo.textContent = `R$ ${usuarioLogado.saldo.toFixed(2)}`;
         boasVindas.textContent = `Olá, ${usuarioLogado.nome}`;
-    } outro {
+    } else {
         loginErro.style.display = 'block';
     }
 });
 
-// 5. Lógica de Envio de Cadastro (Onde aplicaremos as RegEx)
+// 5. Lógica de Envio de Cadastro
 document.querySelector('#form-cadastro').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // TODO: Os alunos vão validar os campos com RegEx e conferir se as senhas coincidem.
-    // Após a validação com sucesso, transita para a tela de análise:
-    secaoCadastro.style.display = 'nenhum';
+    // TODO: validar os campos com RegEx e conferir se as senhas coincidem.
+    secaoCadastro.style.display = 'none';
     secaoSucesso.style.display = 'block';
 });
 
-// 6. Botão para voltar ao início a partir da tela de sucesso
+// 6. Voltar ao início
 document.querySelector('#btn-voltar-inicio').addEventListener('click', () => {
-    localização.recarregar();
+    location.reload();
 });
 
-// 7. Operações Bancárias (Espaço reservado para as próximas aulas / API)
+// 7. Operações Bancárias (reservado para as próximas aulas)
 document.querySelector('#btn-depositar').addEventListener('click', () => { });
 document.querySelector('#btn-sacar').addEventListener('click', () => { });
 document.querySelector('#btn-transferir').addEventListener('click', () => { });
 
 document.querySelector('#btn-sair').addEventListener('click', () => {
-    localização.recarregar();
+    location.reload();
 });

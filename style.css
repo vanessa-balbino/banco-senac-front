@@ -1,283 +1,283 @@
 /* Estilos Gerais - Identidade Visual Banco Senac */
-corpo {
-    família de fontes: 'Segoe UI', Tahoma, Genebra, Verdana, sans-serif;
-    fundo: gradiente-linear(135deg, #002b49 0%, #004b87 100%);
-    Exibir: flexível;
-    justificar-conteúdo: centralizado;
-    alinhamento-itens: centro;
-    altura mínima: 100vh;
-    margem: 0;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #002b49 0%, #004b87 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 #container {
-    fundo: branco;
-    preenchimento: 2rem;
-    raio da borda: 12px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    largura: 380px;
-    alinhamento do texto: centralizado;
-    box-sized: caixa com borda;
+    width: 380px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Logótipo e Cabelo */
+/* Logótipo e Cabeçalho */
 .banco-logo-container {
-    Exibir: flexível;
-    flex-direction: coluna;
-    alinhamento-itens: centro;
-    espaçamento: 10px;
-    margem-inferior: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 .logo-senac {
-    largura máxima: 280px;
-    altura máxima: 110px;
-    largura: automática;
-    altura: automática;
-    ajuste-do-objeto: conter;
+    max-width: 280px;
+    max-height: 110px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .banco-tag {
-    exibição: inline-flex;
-    alinhamento-itens: centro;
-    espaçamento: 5px;
-    cor de fundo: #e6f0fa;
-    cor: #0056b3;
-    preenchimento: 3px 10px;
-    raio da borda: 20px;
-    tamanho da fonte: 0,75rem;
-    peso da fonte: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #e6f0fa;
+    color: #0056b3;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
 }
 
-.subtítulo {
-    cor: #666;
-    tamanho da fonte: 0,85rem;
-    margem-inferior: 15px;
+.subtitle {
+    color: #666;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
 }
 
 .titulo-secao {
-    cor: #003366;
-    tamanho da fonte: 1,2rem;
-    margem: 10px 0 15px 0;
-    alinhamento de texto: esquerda;
+    color: #003366;
+    font-size: 1.2rem;
+    margin: 10px 0 15px 0;
+    text-align: left;
 }
 
 /* Campos e Grupos de Formulário com Rótulos */
 .campo-grupo {
-    alinhamento de texto: esquerda;
-    margem-inferior: 10px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-.campo-grupo rótulo {
-    exibir: bloco;
-    tamanho da fonte: 0,78rem;
-    peso da fonte: negrito;
-    Cor: #495057;
-    margem-inferior: 3px;
+.campo-grupo label {
+    display: block;
+    font-size: 0.78rem;
+    font-weight: bold;
+    color: #495057;
+    margin-bottom: 3px;
 }
 
 .campo-grupo input {
-    largura: 100%;
-    preenchimento: 8px 10px;
-    margem: 0;
-    borda: 1px sólida #ddd;
-    raio-da-borda: 6px;
-    box-sized: caixa com borda;
-    tamanho da fonte: 0,9rem;
-    Esboço: nenhum;
-    transição: cor da borda 0,2s;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
-/* Contribuições globais (fora de grupos) */
-entrada {
-    largura: 100%;
-    preenchimento: 10px 12px;
-    margem: 8px 0;
-    borda: 1px sólida #ddd;
-    raio-da-borda: 6px;
-    box-sized: caixa com borda;
-    tamanho da fonte: 0,95rem;
-    Esboço: nenhum;
-    transição: cor da borda 0,2s;
+/* Inputs globais (fora de grupos) */
+input {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
 }
 
-entrada:foco,
+input:focus,
 .campo-grupo input:focus {
-    cor da borda: #0056b3;
+    border-color: #0056b3;
 }
 
-botão {
-    largura: 100%;
-    preenchimento: 11px;
-    cor de fundo: #0056b3;
-    cor: branca;
-    fronteira: nenhuma;
-    raio-da-borda: 6px;
-    cursor: ponteiro;
-    tamanho da fonte: 0,95rem;
-    peso da fonte: negrito;
-    margem superior: 8px;
-    transição: cor de fundo 0,2s;
+button {
+    width: 100%;
+    padding: 11px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: background-color 0.2s;
 }
 
-botão:passar o mouse {
-    cor de fundo: #003f8a;
+button:hover {
+    background-color: #003f8a;
 }
 
 .mensagem-erro {
-    Cor: #dc3545;
-    tamanho da fonte: 0,85rem;
-    margem superior: 8px;
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 8px;
 }
 
-/* Links de Alterância */
+/* Links de Alternância */
 .link-alternativa {
-    tamanho da fonte: 0,85rem;
-    cor: #666;
-    margem superior: 15px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 15px;
 }
 
 .link-alternativa a {
-    cor: #0056b3;
-    decoração de texto: nenhuma;
-    peso da fonte: negrito;
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .link-alternativa a:hover {
-    decoração de texto: sublinhado;
+    text-decoration: underline;
 }
 
 /* Tela de Sucesso / Análise */
 .status-container {
-    alinhamento do texto: centralizado;
-    preenchimento: 15px 5px;
+    text-align: center;
+    padding: 15px 5px;
 }
 
 .icone-relogio {
-    margem: 15px 0 10px 0;
+    margin: 15px 0 10px 0;
 }
 
 .status-container h2 {
-    cor: #003366;
-    tamanho da fonte: 1,3rem;
-    margem-inferior: 12px;
+    color: #003366;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
 }
 
-.texto-analisar {
-    Cor: #495057;
-    tamanho da fonte: 0,92rem;
-    altura da linha: 1,5;
-    margem-inferior: 12px;
+.texto-analise {
+    color: #495057;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
 .texto-analise-sub {
-    cor: #6c757d;
-    tamanho da fonte: 0,82rem;
-    altura da linha: 1,4;
-    margem-inferior: 25px;
+    color: #6c757d;
+    font-size: 0.82rem;
+    line-height: 1.4;
+    margin-bottom: 25px;
 }
 
 #btn-voltar-inicio {
-    cor de fundo: #0056b3;
-    margem superior: 10px;
+    background-color: #0056b3;
+    margin-top: 10px;
 }
 
 #btn-voltar-inicio:hover {
-    cor de fundo: #003f8a;
+    background-color: #003f8a;
 }
 
-/* Painel / Dashboard Personalizado */
+/* Painel / Dashboard */
 .painel-header {
-    borda inferior: 2px sólida #f1f3f5;
-    preenchimento-inferior: 12px;
-    margem-inferior: 15px;
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .painel-topo {
-    Exibir: flexível;
-    justify-content: espaço-entre;
-    alinhamento-itens: centro;
-    margem-inferior: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
 }
 
 .logo-senac-mini {
-    largura máxima: 190px;
-    altura máxima: 72px;
-    largura: automática;
-    altura: automática;
-    ajuste-do-objeto: conter;
+    max-width: 190px;
+    max-height: 72px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
 
 .badge-banco {
-    cor de fundo: #e6f0fa;
-    cor: #0056b3;
-    tamanho da fonte: 0,65rem;
-    peso da fonte: negrito;
-    preenchimento: 3px 8px;
-    raio da borda: 20px;
-    text-transform: maiúsculas;
-    espaçamento entre letras: 0,5px;
+    background-color: #e6f0fa;
+    color: #0056b3;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 #boas-vindas {
-    Cor: #212529;
-    tamanho da fonte: 1,2rem;
-    margem: 4px 0 0 0;
-    alinhamento de texto: esquerda;
+    color: #212529;
+    font-size: 1.2rem;
+    margin: 4px 0 0 0;
+    text-align: left;
 }
 
 .saldo-box {
-    fundo: #f8f9fa;
-    borda: 1px sólida #e9ecef;
-    preenchimento: 14px;
-    raio da borda: 8px;
-    margem-inferior: 15px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .saldo-box p {
-    margem: 0 0 4px 0;
-    cor: #6c757d;
-    tamanho da fonte: 0,8rem;
+    margin: 0 0 4px 0;
+    color: #6c757d;
+    font-size: 0.8rem;
 }
 
 #saldo-valor {
-    tamanho da fonte: 1,5rem;
-    cor: #28a745;
+    font-size: 1.5rem;
+    color: #28a745;
 }
 
-.operações {
-    alinhamento de texto: esquerda;
-    fundo: #fafbfc;
-    borda: 1px sólida #edf2f7;
-    preenchimento: 12px;
-    raio da borda: 8px;
+.operacoes {
+    text-align: left;
+    background: #fafbfc;
+    border: 1px solid #edf2f7;
+    padding: 12px;
+    border-radius: 8px;
 }
 
-.operações h3 {
-    tamanho da fonte: 0,85rem;
-    Cor: #495057;
-    margem: 0 0 6px 0;
+.operacoes h3 {
+    font-size: 0.85rem;
+    color: #495057;
+    margin: 0 0 6px 0;
 }
 
-.botos {
-    Exibir: flexível;
-    espaço: 8px;
+.botoes {
+    display: flex;
+    gap: 8px;
 }
 
-.botão {
-    margem superior: 0;
+.botoes button {
+    margin-top: 0;
 }
 
-hora {
-    borda: 0;
-    borda superior: 1px sólida #e9ecef;
-    margem: 12px 0;
+hr {
+    border: 0;
+    border-top: 1px solid #e9ecef;
+    margin: 12px 0;
 }
 
 #btn-sair {
-    cor de fundo: #dc3545;
-    margem superior: 15px;
+    background-color: #dc3545;
+    margin-top: 15px;
 }
 
 #btn-sair:hover {
-    cor de fundo: #a71d2a;
+    background-color: #a71d2a;
 }
