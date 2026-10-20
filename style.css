@@ -1,0 +1,283 @@
+/* Estilos Gerais - Identidade Visual Banco Senac */
+corpo {
+    família de fontes: 'Segoe UI', Tahoma, Genebra, Verdana, sans-serif;
+    fundo: gradiente-linear(135deg, #002b49 0%, #004b87 100%);
+    Exibir: flexível;
+    justificar-conteúdo: centralizado;
+    alinhamento-itens: centro;
+    altura mínima: 100vh;
+    margem: 0;
+}
+
+#container {
+    fundo: branco;
+    preenchimento: 2rem;
+    raio da borda: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    largura: 380px;
+    alinhamento do texto: centralizado;
+    box-sized: caixa com borda;
+}
+
+/* Logótipo e Cabelo */
+.banco-logo-container {
+    Exibir: flexível;
+    flex-direction: coluna;
+    alinhamento-itens: centro;
+    espaçamento: 10px;
+    margem-inferior: 15px;
+}
+
+.logo-senac {
+    largura máxima: 280px;
+    altura máxima: 110px;
+    largura: automática;
+    altura: automática;
+    ajuste-do-objeto: conter;
+}
+
+.banco-tag {
+    exibição: inline-flex;
+    alinhamento-itens: centro;
+    espaçamento: 5px;
+    cor de fundo: #e6f0fa;
+    cor: #0056b3;
+    preenchimento: 3px 10px;
+    raio da borda: 20px;
+    tamanho da fonte: 0,75rem;
+    peso da fonte: 600;
+}
+
+.subtítulo {
+    cor: #666;
+    tamanho da fonte: 0,85rem;
+    margem-inferior: 15px;
+}
+
+.titulo-secao {
+    cor: #003366;
+    tamanho da fonte: 1,2rem;
+    margem: 10px 0 15px 0;
+    alinhamento de texto: esquerda;
+}
+
+/* Campos e Grupos de Formulário com Rótulos */
+.campo-grupo {
+    alinhamento de texto: esquerda;
+    margem-inferior: 10px;
+}
+
+.campo-grupo rótulo {
+    exibir: bloco;
+    tamanho da fonte: 0,78rem;
+    peso da fonte: negrito;
+    Cor: #495057;
+    margem-inferior: 3px;
+}
+
+.campo-grupo input {
+    largura: 100%;
+    preenchimento: 8px 10px;
+    margem: 0;
+    borda: 1px sólida #ddd;
+    raio-da-borda: 6px;
+    box-sized: caixa com borda;
+    tamanho da fonte: 0,9rem;
+    Esboço: nenhum;
+    transição: cor da borda 0,2s;
+}
+
+/* Contribuições globais (fora de grupos) */
+entrada {
+    largura: 100%;
+    preenchimento: 10px 12px;
+    margem: 8px 0;
+    borda: 1px sólida #ddd;
+    raio-da-borda: 6px;
+    box-sized: caixa com borda;
+    tamanho da fonte: 0,95rem;
+    Esboço: nenhum;
+    transição: cor da borda 0,2s;
+}
+
+entrada:foco,
+.campo-grupo input:focus {
+    cor da borda: #0056b3;
+}
+
+botão {
+    largura: 100%;
+    preenchimento: 11px;
+    cor de fundo: #0056b3;
+    cor: branca;
+    fronteira: nenhuma;
+    raio-da-borda: 6px;
+    cursor: ponteiro;
+    tamanho da fonte: 0,95rem;
+    peso da fonte: negrito;
+    margem superior: 8px;
+    transição: cor de fundo 0,2s;
+}
+
+botão:passar o mouse {
+    cor de fundo: #003f8a;
+}
+
+.mensagem-erro {
+    Cor: #dc3545;
+    tamanho da fonte: 0,85rem;
+    margem superior: 8px;
+}
+
+/* Links de Alterância */
+.link-alternativa {
+    tamanho da fonte: 0,85rem;
+    cor: #666;
+    margem superior: 15px;
+}
+
+.link-alternativa a {
+    cor: #0056b3;
+    decoração de texto: nenhuma;
+    peso da fonte: negrito;
+}
+
+.link-alternativa a:hover {
+    decoração de texto: sublinhado;
+}
+
+/* Tela de Sucesso / Análise */
+.status-container {
+    alinhamento do texto: centralizado;
+    preenchimento: 15px 5px;
+}
+
+.icone-relogio {
+    margem: 15px 0 10px 0;
+}
+
+.status-container h2 {
+    cor: #003366;
+    tamanho da fonte: 1,3rem;
+    margem-inferior: 12px;
+}
+
+.texto-analisar {
+    Cor: #495057;
+    tamanho da fonte: 0,92rem;
+    altura da linha: 1,5;
+    margem-inferior: 12px;
+}
+
+.texto-analise-sub {
+    cor: #6c757d;
+    tamanho da fonte: 0,82rem;
+    altura da linha: 1,4;
+    margem-inferior: 25px;
+}
+
+#btn-voltar-inicio {
+    cor de fundo: #0056b3;
+    margem superior: 10px;
+}
+
+#btn-voltar-inicio:hover {
+    cor de fundo: #003f8a;
+}
+
+/* Painel / Dashboard Personalizado */
+.painel-header {
+    borda inferior: 2px sólida #f1f3f5;
+    preenchimento-inferior: 12px;
+    margem-inferior: 15px;
+}
+
+.painel-topo {
+    Exibir: flexível;
+    justify-content: espaço-entre;
+    alinhamento-itens: centro;
+    margem-inferior: 8px;
+}
+
+.logo-senac-mini {
+    largura máxima: 190px;
+    altura máxima: 72px;
+    largura: automática;
+    altura: automática;
+    ajuste-do-objeto: conter;
+}
+
+.badge-banco {
+    cor de fundo: #e6f0fa;
+    cor: #0056b3;
+    tamanho da fonte: 0,65rem;
+    peso da fonte: negrito;
+    preenchimento: 3px 8px;
+    raio da borda: 20px;
+    text-transform: maiúsculas;
+    espaçamento entre letras: 0,5px;
+}
+
+#boas-vindas {
+    Cor: #212529;
+    tamanho da fonte: 1,2rem;
+    margem: 4px 0 0 0;
+    alinhamento de texto: esquerda;
+}
+
+.saldo-box {
+    fundo: #f8f9fa;
+    borda: 1px sólida #e9ecef;
+    preenchimento: 14px;
+    raio da borda: 8px;
+    margem-inferior: 15px;
+}
+
+.saldo-box p {
+    margem: 0 0 4px 0;
+    cor: #6c757d;
+    tamanho da fonte: 0,8rem;
+}
+
+#saldo-valor {
+    tamanho da fonte: 1,5rem;
+    cor: #28a745;
+}
+
+.operações {
+    alinhamento de texto: esquerda;
+    fundo: #fafbfc;
+    borda: 1px sólida #edf2f7;
+    preenchimento: 12px;
+    raio da borda: 8px;
+}
+
+.operações h3 {
+    tamanho da fonte: 0,85rem;
+    Cor: #495057;
+    margem: 0 0 6px 0;
+}
+
+.botos {
+    Exibir: flexível;
+    espaço: 8px;
+}
+
+.botão {
+    margem superior: 0;
+}
+
+hora {
+    borda: 0;
+    borda superior: 1px sólida #e9ecef;
+    margem: 12px 0;
+}
+
+#btn-sair {
+    cor de fundo: #dc3545;
+    margem superior: 15px;
+}
+
+#btn-sair:hover {
+    cor de fundo: #a71d2a;
+}
