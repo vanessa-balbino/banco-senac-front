@@ -19,7 +19,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Logótipo e Cabeçalho */
+/* LogÃ³tipo e CabeÃ§alho */
 .banco-logo-container {
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ body {
     text-align: left;
 }
 
-/* Campos e Grupos de Formulário com Rótulos */
+/* Campos e Grupos de FormulÃ¡rio com RÃ³tulos */
 .campo-grupo {
     text-align: left;
     margin-bottom: 10px;
@@ -129,7 +129,7 @@ button:hover {
     margin-top: 8px;
 }
 
-/* Links de Alternância */
+/* Links de AlternÃ¢ncia */
 .link-alternativa {
     font-size: 0.85rem;
     color: #666;
@@ -146,7 +146,7 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Tela de Sucesso / Análise */
+/* Tela de Sucesso / AnÃ¡lise */
 .status-container {
     text-align: center;
     padding: 15px 5px;
@@ -185,7 +185,7 @@ button:hover {
     background-color: #003f8a;
 }
 
-/* Painel / Dashboard */
+/* Painel / Dashboard Personalizado */
 .painel-header {
     border-bottom: 2px solid #f1f3f5;
     padding-bottom: 12px;

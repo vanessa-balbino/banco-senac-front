@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!-- saved from url=(0222)https://alt-638e5f8fa10ff.blackboard.com/bbcswebdav/pid-15832509-dt-content-rid-414739541_1/courses/STSICAS2NA-2603-689209/index%282%29.html?one_hash=95570FF311880912ED2F705544BA09FB&f_hash=CD08E2D2B08E42E6A2FD4366FF6B915A -->
-<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
     <title>Banco SENAC - Conta Digital</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container">
@@ -11,10 +11,10 @@
         <!-- 1. SEÇÃO DE LOGIN -->
         <section id="login-section">
             <div class="banco-logo-container">
-                <img src="./senac-logo.png" alt="Logótipo Senac" class="logo-senac">
+                <img src="senac-logo.png" alt="Logótipo Senac" class="logo-senac">
                 <div class="banco-tag">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0056b3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"></path>
+                        <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/>
                     </svg>
                     <span>Banco Digital</span>
                 </div>
@@ -28,18 +28,23 @@
             <p id="login-erro" class="mensagem-erro" style="display: none;">CPF ou senha inválidos!</p>
 
             <p class="link-alternativa">
-                Ainda não é cliente? <a href="https://alt-638e5f8fa10ff.blackboard.com/bbcswebdav/pid-15832509-dt-content-rid-414739541_1/courses/STSICAS2NA-2603-689209/index%282%29.html?one_hash=95570FF311880912ED2F705544BA09FB&amp;f_hash=CD08E2D2B08E42E6A2FD4366FF6B915A#" id="link-ir-cadastro">Abra sua conta</a>
+                Ainda não é cliente? <a href="#" id="link-ir-cadastro">Abra sua conta</a>
             </p>
         </section>
 
         <!-- 2. SEÇÃO DE CADASTRO / ABERTURA DE CONTA -->
         <section id="cadastro-section" style="display: none;">
             <div class="painel-topo">
-                <img src="./senac-logo.png" alt="Logótipo Senac" class="logo-senac-mini">
+                <img src="senac-logo.png" alt="Logótipo Senac" class="logo-senac-mini">
                 <span class="badge-banco">Banco SENAC</span>
             </div>
             
-            <h2 class="titulo-secao">Registo de Novo Cliente</h2>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 10px 0 15px 0;">
+                <h2 class="titulo-secao" style="margin: 0;">Registo de Novo Cliente</h2>
+                <a href="#" id="link-limpar-rascunho" style="font-size: 0.75rem; color: #dc3545; text-decoration: none; font-weight: bold;">
+                    Limpar rascunho
+                </a>
+            </div>
 
             <form id="form-cadastro">
                 <div class="campo-grupo">
@@ -96,14 +101,14 @@
             </form>
 
             <p class="link-alternativa">
-                Já tem uma conta? <a href="https://alt-638e5f8fa10ff.blackboard.com/bbcswebdav/pid-15832509-dt-content-rid-414739541_1/courses/STSICAS2NA-2603-689209/index%282%29.html?one_hash=95570FF311880912ED2F705544BA09FB&amp;f_hash=CD08E2D2B08E42E6A2FD4366FF6B915A#" id="link-voltar-login">Faça login</a>
+                Já tem uma conta? <a href="#" id="link-voltar-login">Faça login</a>
             </p>
         </section>
 
         <!-- 3. TELA DE SUCESSO / CONTA EM ANÁLISE -->
         <section id="sucesso-section" style="display: none;">
             <div class="painel-topo">
-                <img src="./index_files/senac-logo.png" alt="Logótipo Senac" class="logo-senac-mini">
+                <img src="senac-logo.png" alt="Logótipo Senac" class="logo-senac-mini">
                 <span class="badge-banco">Banco SENAC</span>
             </div>
 
@@ -130,7 +135,7 @@
         <section id="painel-section" style="display: none;">
             <div class="painel-header">
                 <div class="painel-topo">
-                    <img src="./index_files/senac-logo.png" alt="Logótipo Senac" class="logo-senac-mini">
+                    <img src="senac-logo.png" alt="Logótipo Senac" class="logo-senac-mini">
                     <span class="badge-banco">Banco SENAC</span>
                 </div>
                 <h2 id="boas-vindas">Olá, Cliente</h2>
@@ -160,6 +165,6 @@
         </section>
 
     </div>
-    <script src="./script.js"></script>
-
-</body></html>
+    <script src="script.js"></script>
+</body>
+</html>
